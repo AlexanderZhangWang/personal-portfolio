@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Lab</title>
+    
 </head>
 
 <body>
@@ -13,8 +14,22 @@
 
     <main>
         <noscript>This browser does not support Javascript</noscript>
-        
-    </main>
+        <!-- 仅保留一个canvas -->
+        <canvas id="skillsCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+      </main>
+    
+      <script>
+        window.addEventListener('DOMContentLoaded', () => {
+          const canvas = document.getElementById('skillsCanvas');
+          const ctx = canvas.getContext('2d');
+          
+          ctx.fillStyle = "#2d3748";
+          ctx.fillRect(0, 0, 300, 150);
+          ctx.font = "20px Arial";
+          ctx.fillStyle = "white";
+          ctx.fillText("Technical Skills Chart", 20, 80);
+        });
+      </script>
 	
     <footer>
         
