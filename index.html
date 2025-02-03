@@ -8,6 +8,17 @@
     <style>
         aside {border: solid}
         section {border: solid}
+        .skill li {
+            color: rgb(94, 234, 212);
+            padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+            background-color: rgba(45, 212, 191, 0.1);
+            border-radius: 9999px; 
+            display: inline-flex;
+            align-items: center;
+            border: 0 solid #e5e7eb;
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
     </style>
 </head>
 
@@ -49,7 +60,7 @@
                             <p>
                                 CSE 130 Programming Languages - Teaching and tutoring <b>Lambda Calculus</b> and <b>Haskell</b>.
                             </p>
-                            <ul>                              
+                            <ul class="skill">                              
                                 <li>Lambda Calculus</li>
                                 <li>Haskell</li>
                             </ul>
@@ -67,7 +78,7 @@
                             <p>
                                 Developed and optimized Java modules to integrate JSON data from China Merchants Bank APIs, automating daily updates in
                                 SQL Server and improving <abbr title="Office Automation">OA</abbr> system data retrieval efficiency by 50%.                            </p>
-                            <ul>
+                            <ul class="skill">
                                 <li>Java</li>
                                 <li>Sql Server</li>
                                 <li>React</li>
@@ -123,7 +134,7 @@
                             <p>
                                 Led a team of six to develop Success List, an Android task management app, leveraging Java, XML, and SQLite for seamless UI
                                 design and efficient persistent data storage.                            </p>
-                            <ul>
+                            <ul class="skill">
                                 <li>Java</li>
                                 <li>Android Studio</li> 
                             </ul>
@@ -148,7 +159,7 @@
                                 Collaborated in a team of four to develop Vymsical, an interactive music quiz game using Next.js, where players identify songs from
                                 50 tracks, scoring based on response time.
                             </p>
-                            <ul>
+                            <ul class="skill">
                                     <li>Vercel</li>
                                     <li>Next.js</li>
                             </ul>
@@ -202,8 +213,19 @@
     </main>
 	
     <footer>
-
+        
     </footer>
+
+    <hello-world></hello-world>
+
+    <script>
+        class HelloWorldElement extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello World");
+        }
+        }
+        customElements.define('hello-world', HelloWorldElement);
+    </script>
 </body>
 
 </html>
