@@ -9,29 +9,110 @@
 
 <body>
     <header>
-        <h1>Lab</h1>
+        <hgroup>
+            <h1>Lab</h1>
+            <h2>CSE 134B</h2>
+        </hgroup>
     </header>
 
     <main>
         <noscript>This browser does not support Javascript</noscript>
-        <canvas id="canvas" width="300" height="150" style="border:1px solid grey"></canvas>
-      </main>
-    
-      <script>
-        window.addEventListener('DOMContentLoaded', () => {
-          const canvas = document.getElementById('canvas');
-          const ctx = canvas.getContext('2d');
+        <canvas id="canvas" width="300" height="150" style="border: solid"></canvas>
+        <section>
+            <h3>Code Example</h3>
+            <pre>
+                <code>
+                    function foo() {
+                        console.log("Hello World");
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h3>Media Demos</h3>
+            <audio controls>
+                <source src="demo.mp3" type="audio/mpeg">
+                Audio not supported
+            </audio>
+            
+            <video controls width="300">
+                <source src="demo.mp4" type="video/mp4">
+                Video not supported
+            </video>
+        </section>
+
+        <table>
+            <caption>Technology Stack</caption>
+            <colgroup>
+                <col span="1">
+                <col span="2">
+            </colgroup>
+            <tr>
+                <th>Language</th>
+                <th>Framework</th>
+                <th>Database</th>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>React</td>
+                <td>PostgreSQL</td>
+            </tr>
+        </table>
+
+        <blockquote>
+            <p>"Successful people are not gifted; they just work hard, then succeed on purpose."</p>
+            <cite>— G.K. Nielson</cite>
+        </blockquote>
+
+        <p>
+            Last updated: <del datetime="2025-01-31">Jan 2025</del>
+            <ins datetime="2024-02-02">Feb 2025</ins>
+        </p>
+
+        <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save</p>
+
+        <template id="projectTemplate">
+            <div class="project">
+                <h3>1</h3>
+                <p>1</p>
+            </div>
+        </template>
+
+        <iframe 
+            src="https://zhangportfolio.netlify.app/" 
+            width="300"
+            height="150">
+        </iframe>
+
+        <dl>
+            <dt>MES</dt>
+            <dd>Manufacturing Execution System</dd>
+            <dt>ERP</dt>
+            <dd>Enterprise resource planning</dd>
+        </dl>
+
+        <p><dfn>Software Engineer</dfn>, a professional who designs, builds, and maintains software applications</p>
           
-          ctx.fillStyle = "#2d3748";
-          ctx.fillRect(0, 0, 300, 150);
-          ctx.font = "20px Arial";
-          ctx.fillStyle = "white";
-          ctx.fillText("Hello World", 20, 80);
+    </main>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            ctx.fillStyle = "#2d3748";
+            ctx.fillRect(0, 0, 300, 150);
+            ctx.font = "20px Arial";
+            ctx.fillStyle = "white";
+            ctx.fillText("Hello World", 20, 80);
         });
-      </script>
-	
-    <footer>
+    </script>
         
+    <footer>
+        <dialog open>
+            <p>my web site</p>
+        </dialog>
     </footer>
 </body>
 
