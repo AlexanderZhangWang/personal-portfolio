@@ -11,13 +11,15 @@
         <h1>Project List</h1>
     </header>
 
+    <div>
+        <search>
+            <form action="/search">
+                <input type="search" name="name">
+                <button>Search Projects</button>
+            </form>
+        </search>
+    </div>
     
-    <search>
-        <form action="/search">
-            <input type="search" name="name">
-            <button>Search Projects</button>
-        </form>
-    </search>
     <label for="skill-filter">Filter Skills:</label>
     <select id="skill-filter">
         <optgroup label="Languages">
